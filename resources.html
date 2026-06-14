@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - EduLearn</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="resource.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <h2 class="logo"><span>Edu</span>Learn</h2>
+            </a>
+            <div class="nav-right">
+                <ul class="navlinks" id="navLinks">
+                    <li><a href="find-sub.html">Find Sub</a></li>
+                    <li><a href="for-school.html">For School</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li class="nav-btn-container">
+                        <button class="nav-btn" id="mainAppointmentBtn">Make Appointment</button>
+                    </li>
+                </ul>
+
+                <div id="desktopNavBtnContainer">
+                    <button class="nav-btn" id="desktopAppointmentBtn">Make Appointment</button>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resources-hero">
+        <div class="container">
+            <h1 class="page-title">Free Educational <span>Resources</span></h1>
+            <p class="page-desc">Download premium guides, classroom tracking tools, checklists, and lesson templates
+                designed specifically for schools and substitute teachers.</p>
+
+            <div class="filter-tabs">
+                <button class="tab-btn active">All Resources</button>
+                <button class="tab-btn">For Substitutes</button>
+                <button class="tab-btn">For School Admins</button>
+                <button class="tab-btn">Lesson Templates</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resources-section">
+        <div class="container">
+            <div class="resources-grid">
+
+                <div class="resource-card">
+                    <div class="card-meta">
+                        <span class="resource-type">Guide Book</span>
+                        <span class="resource-format">PDF (2.4 MB)</span>
+                    </div>
+                    <div>
+                        <h3 class="resource-title">Substitute Teacher Handbook 2026</h3>
+                        <p class="resource-desc">A complete handbook covering classroom strategies, emergency behavior
+                            management, and professional guidelines.</p>
+                    </div>
+                    <button class="download-btn">📥 Download Resource</button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-meta">
+                        <span class="resource-type">Template</span>
+                        <span class="resource-format">DOCX (540 KB)</span>
+                    </div>
+                    <div>
+                        <h3 class="resource-title">Emergency Lesson Plan Template</h3>
+                        <p class="resource-desc">Pre-made, easy-to-fill lesson sheets that permanent teachers can leave
+                            for subs to avoid disruptions.</p>
+                    </div>
+                    <button class="download-btn">📥 Download Resource</button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-meta">
+                        <span class="resource-type">Checklist</span>
+                        <span class="resource-format">PDF (1.1 MB)</span>
+                    </div>
+                    <div>
+                        <h3 class="resource-title">School Admin Staffing Checklist</h3>
+                        <p class="resource-desc">A daily step-by-step checklist for school administrators to allocate
+                            resources and track terms efficiently.</p>
+                    </div>
+                    <button class="download-btn">📥 Download Resource</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2><span>Edu</span>Learn</h2>
+                    <p>Connecting professional substitute teachers with schools and districts smoothly, making education
+                        reliable and trackable.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="find-sub.html">Find Sub</a></li>
+                            <li><a href="for-school.html">For School</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EduLearn. All rights reserved.</p>
+                <p>Designed with ❤️ for Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="appointmentModal">
+        <div class="modal-box">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h3>Book an Appointment</h3>
+            <form id="appointmentForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="date" required>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+<script src="resource.js"></script>
+</body>
+
+</html>

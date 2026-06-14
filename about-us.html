@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EduLearn</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about-us.css">
+</head>
+<body>
+
+    <div class="nav">
+        <div class="container">
+            <a href="index.html" class="logo-link"><h2 class="logo"><span>Edu</span>Learn</h2></a>
+            <div class="nav-right">
+                <ul class="navlinks" id="navLinks">
+                    <li><a href="find-sub.html">Find Sub</a></li>
+                    <li><a href="for-school.html">For School</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about-us.html" class="active">About Us</a></li>
+                    <li class="nav-btn-container">
+                        <button class="nav-btn" id="mainAppointmentBtn">Make Appointment</button>
+                    </li>
+                </ul>
+
+                <div id="desktopNavBtnContainer">
+                    <button class="nav-btn" id="desktopAppointmentBtn">Make Appointment</button>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-hero">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-text">
+                    <h1 class="page-title">We Bridge the Gap in <span>Education</span></h1>
+                    <p class="page-desc">EduLearn was built with a simple goal: to make sure that no classroom is ever left unattended. We connect professional, verified substitute teachers with school districts seamlessly using smart technology.</p>
+                    <p class="page-desc" style="color: #777; font-size: 15px;">By providing flexibility to substitute teachers and reliability to school administrations, we keep the student learning graph constantly growing and on track.</p>
+                </div>
+                <div class="about-image-side">
+                    <img src="student.avif" alt="Our Motivation" class="about-main-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vision-section">
+        <div class="container">
+            <div class="vision-grid">
+                
+                <div class="vision-box">
+                    <h3>🎯 Our Mission</h3>
+                    <p>To provide schools with reliable, instant access to premium educators, ensuring classroom scheduling remains completely unaffected during regular teacher absences.</p>
+                </div>
+
+                <div class="vision-box">
+                    <h3>👁️ Our Vision</h3>
+                    <p>To establish a fully digitalized, highly active ecosystem where substitute teachers find flexible jobs, and education is never compromised anywhere.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2><span>Edu</span>Learn</h2>
+                    <p>Connecting professional substitute teachers with schools and districts smoothly, making education reliable and trackable.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="find-sub.html">Find Sub</a></li>
+                            <li><a href="for-school.html">For School</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EduLearn. All rights reserved.</p>
+                <p>Designed with ❤️ for Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="appointmentModal">
+        <div class="modal-box">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h3>Book an Appointment</h3>
+            <form id="appointmentForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="date" required>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+<script src="about-us.js"></script>
+</body>
+</html>

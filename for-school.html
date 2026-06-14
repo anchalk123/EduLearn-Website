@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For School - EduLearn</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="for-school.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <h2 class="logo"><span>Edu</span>Learn</h2>
+            </a>
+            <div class="nav-right">
+                <ul class="navlinks" id="navLinks">
+                    <li><a href="find-sub.html">Find Sub</a></li>
+                    <li><a href="for-school.html" class="active">For School</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li class="nav-btn-container">
+                        <button class="nav-btn" id="mainAppointmentBtn">Make Appointment</button>
+                    </li>
+                </ul>
+
+                <div id="desktopNavBtnContainer">
+                    <button class="nav-btn" id="desktopAppointmentBtn">Make Appointment</button>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="school-hero">
+        <div class="container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <h1 class="page-title">Smart Management for Modern <span>Schools</span></h1>
+                    <p class="page-desc">We empower school districts to smoothly handle teacher absences. Get access to
+                        verified substitutes, reduce admin work, and ensure that student learning stays on track without
+                        any interruptions.</p>
+                    <button class="cta-btn-orange" id="registerSchoolBtn">Register Your School</button>
+                </div>
+                <div class="hero-image">
+                    <img src="learn.webp" alt="School Class Management" class="school-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits-section">
+        <div class="container">
+            <div class="section-center-header">
+                <h2>Why Districts <span>Trust Us</span></h2>
+                <p>Advanced features tailored specifically to meet the daily staffing demands of schools and educational
+                    institutions.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon-circle">⚡</div>
+                    <h4>Instant Matching</h4>
+                    <p>Automated requests connect absent teachers with premium, pre-verified substitutes within minutes.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="icon-circle">📊</div>
+                    <h4>Real-time Analytics</h4>
+                    <p>Track allocation of resources, upcoming absences, and planning terms effortlessly with data sets.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="icon-circle">🛡️</div>
+                    <h4>Fully Verified Subs</h4>
+                    <p>Every single substitute teacher undergoes a rigorous credential and background verification
+                        process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2><span>Edu</span>Learn</h2>
+                    <p>Connecting professional substitute teachers with schools and districts smoothly, making education
+                        reliable and trackable.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="find-sub.html">Find Sub</a></li>
+                            <li><a href="for-school.html">For School</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EduLearn. All rights reserved.</p>
+                <p>Designed with ❤️ for Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="appointmentModal">
+        <div class="modal-box">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h3>Book an Appointment</h3>
+            <form id="appointmentForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="date" required>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+    <script src="for-school.js"></script>
+</body>
+
+</html>
